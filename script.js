@@ -13,8 +13,8 @@ const seaBoard = [
 
 function allocateShips(shipPositions, initialBoard) {
   for (let i = 0; i < shipPositions.length; i++) {
-    const [shipsLine, shipsColumn] = shipPositions[i];
-    initialBoard[shipsLine][shipsColumn] = "S";
+    const [shipLine, shipColumn] = shipPositions[i];
+    initialBoard[shipLine][shipColumn] = "S";
   }
   return initialBoard;
 }
